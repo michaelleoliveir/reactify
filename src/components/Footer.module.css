@@ -1,36 +1,42 @@
 footer {
-    height: 250px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5em;
 
-    background-color: #03045E;
-    color: #CAF0F8;
+    background-color: #CAF0F8;
 }
 
 h3 {
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: #03045E;
 }
 
 p {
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 35px;
+    color: #03055e6e;
 }
 
 #link {
     padding: 1.5rem;
     text-decoration: none;
+    color: #03055ea7;
+}
+
+#iconContainer {
+    margin-top: 100px !important;
 }
 
 #icons {
     padding: 10px 10px 10px 10px;
-    margin: 15px 10px 5px 10px;
+    margin: 10px 10px 10px 10px;
 
-    border: 1px solid #CAF0F8; 
+    color: #03045E;
+    border: 1px solid #03055e9e; 
     border-radius: 50%;      
     background-color: transparent; 
 }

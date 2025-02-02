@@ -13,10 +13,10 @@ const Footer = () => {
                 <NavLink to="/about" id={styles.link}>ABOUT</NavLink>
                 <NavLink to="/contact" id={styles.link}>CONTACT</NavLink>
             </div>
-            <div>
-                <RiInstagramFill size={32}  id={styles.icons} />
-                <RiLinkedinBoxFill size={32} id={styles.icons} />
-                <RiMailFill size={32} id={styles.icons} />
+            <div style={{marginTop:"10px"}}>
+                <RiInstagramFill size={25}  id={styles.icons} />
+                <RiLinkedinBoxFill size={25} id={styles.icons} />
+                <RiMailFill size={25} id={styles.icons} />
             </div>
             <p>Copyright &copy;2025 All rights reserved | Blog developed by Michaelle Oliveira </p>
         </footer>
