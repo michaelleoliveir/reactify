@@ -25,6 +25,7 @@
 
 .links_list {
     display: flex;
+    align-items: center;
     list-style: none;
     margin-top: 3px;
     margin-right: 40px;
@@ -36,12 +37,26 @@
 }
 
 .links_list a {
+    font-size: 1.1rem;
+    font-weight: 500;
     text-decoration: none;
     color: #03045E;
     font-family: 'BLOWREPH', sans-serif;
 }
 
 .active {
-    background-color: #000;
-    color: white;
+    background-color: #03045E;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ADE8F4 !important;
+}
+
+.active svg {
+    color: inherit;
+}
+
+.icons {
+    height: 25px;
 }

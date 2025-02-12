@@ -13,13 +13,13 @@ const NavBar = () => {
 
             <ul className={styles.links_list}>
                 <li>
-                    <NavLink to="/">
-                        <RiHome2Line />
+                    <NavLink to="/" className={({isActive}) => (isActive ? styles.active : "")}>
+                        Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about">
-                        <RiInformation2Line />
+                    <NavLink to="/about" className={({isActive}) => (isActive ? styles.active : "")}>
+                        About
                     </NavLink>
                 </li>
             </ul>
