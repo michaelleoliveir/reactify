@@ -1,0 +1,17 @@
+.heading {
+    padding-top: 2.8rem;
+    font-size: 3rem;
+    color: #03045E;
+}
+
+.text {
+    margin: 0.4rem 2rem 2.5rem;
+    font-size: 1.2rem;
+    color: rgb(152, 152, 152);
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,4 +1,5 @@
 footer {
+    margin-top: 100px;
     height: 260px;
     display: flex;
     flex-direction: column;
