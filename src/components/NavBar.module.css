@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/blowreph');
 
 .navbar {
+    height: 30px;
     background-color: #CAF0F8;
     display: flex;
     box-shadow: #023d8a66 0px -2px 10px 0px;
@@ -41,10 +42,12 @@
     font-weight: 500;
     text-decoration: none;
     color: #03045E;
+    border-radius: 3px;
     font-family: 'BLOWREPH', sans-serif;
 }
 
 .active {
+    transition: all 0.4s ease-in-out;
     background-color: #03045E;
     padding: 8px 18px;
     display: inline-flex;
