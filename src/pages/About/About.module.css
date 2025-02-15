@@ -1,0 +1,31 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    margin-top: 5rem;
+    font-size: 3.4rem;
+    color: #03045E;
+}
+
+.titulo span {
+    font-weight: bolder;
+}
+
+.sub {
+    color: #03055e9e;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    width: 51%;
+}
+
+.box {
+    border: 1.7px solid #03055e38;
+    border-radius: 0.7rem;
+    height: 14rem;
+    width: 16rem;
+}
