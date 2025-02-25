@@ -30,6 +30,9 @@
     align-items: center;
     justify-content: center;
 
+    border: none;
+    box-shadow: 1px solid black;
+    box-shadow: 10px 10px 94px -39px rgba(0,0,0,0.75);
     padding: 20px;
     border: 1.7px solid #03055e38;
     border-radius: 0.7rem;
@@ -37,7 +40,13 @@
     width: 16rem;
 }
 
+#boxFront {
+    background-color: #03045E;
+}
+
 .boxText {
+    color: #CAF0F8;
+    font-family: 'BLOWREPH', sans-serif;
     width: 70%;
     margin: 0px;
     font-size: 2rem;
@@ -53,10 +62,17 @@ button {
 }
 
 .front {
+    color: #CAF0F8;
     right: 10px;
 }
 
 .back {
+    color: #03045E;
     left: 10px;
+}
+
+.iconsBack {
+    padding: 3px;
+    color: #03045E;
 }
 

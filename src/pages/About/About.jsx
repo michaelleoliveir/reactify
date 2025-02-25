@@ -4,21 +4,30 @@ import { Link } from "react-router-dom";
 import { Grid2 } from "@mui/material";
 import ReactCardFlip from "react-card-flip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { DiCss3Full, DiFirebase, DiJsBadge, DiNpm, DiReact } from "react-icons/di";
 
 const About = () => {
     const [flippedCards, setFlippedCards] = useState({});
 
     const cards = [
         {
-            front: "Tecnologias usadas",
-            back: "Teste 1"
+            front: "TECNOLOGIAS UTILIZADAS",
+            back: (
+                <>
+                    <DiFirebase className={styles.iconsBack} size={54} />
+                    <DiJsBadge className={styles.iconsBack} size={54} />
+                    <DiNpm className={styles.iconsBack} size={54} />
+                    <DiReact className={styles.iconsBack} size={54} />
+                    <DiCss3Full className={styles.iconsBack} size={54} />
+                </>
+            )
         },
         {
-            front: "Teste de card",
+            front: "BIBLIOTECAS",
             back: "Teste 2"
         },
         {
-            front: "Teste de card outro",
+            front: "LINKS",
             back: "Teste 3"
         }
     ]
@@ -47,7 +56,7 @@ const About = () => {
                         <Grid2 xs={12} md={4} key={index}>
                             <ReactCardFlip isFlipped={!!flippedCards[index]} flipDirection="horizontal">
 
-                                <div className={styles.box}>
+                                <div className={styles.box} id={styles.boxFront}>
                                     <p className={styles.boxText}>{card.front}</p>
                                     <button className={styles.front} onClick={() => handleFlip(index)}>
                                         <ChevronRight size={35} />
@@ -55,7 +64,7 @@ const About = () => {
                                 </div>
 
 
-                                <div className={styles.box}>
+                                <div className={styles.box} id={styles.boxback}>
                                     <p className={styles.boxText}>{card.back}</p>
                                     <button className={styles.back} onClick={() => handleFlip(index)}>
                                         <ChevronLeft size={41} />
