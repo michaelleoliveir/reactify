@@ -44,11 +44,15 @@
     background-color: #03045E;
 }
 
+#boxBack {
+    background-color: #d3f2f9;
+}
+
 .boxText {
     color: #CAF0F8;
     font-family: 'BLOWREPH', sans-serif;
     width: 70%;
-    margin: 0px;
+    margin-top: 10px;
     font-size: 2rem;
     text-align: center;
 }
@@ -72,7 +76,18 @@ button {
 }
 
 .iconsBack {
+    margin: 0px 10px 0px 10px;
     padding: 3px;
     color: #03045E;
+}
+
+.itemsBack {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #03045E;
+}
+
+.itemsBack:hover{
+    font-weight: bolder;
 }
 

@@ -5,6 +5,8 @@ import { Grid2 } from "@mui/material";
 import ReactCardFlip from "react-card-flip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { DiCss3Full, DiFirebase, DiJsBadge, DiNpm, DiReact } from "react-icons/di";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const About = () => {
     const [flippedCards, setFlippedCards] = useState({});
@@ -24,11 +26,33 @@ const About = () => {
         },
         {
             front: "BIBLIOTECAS",
-            back: "Teste 2"
+            back: (
+                <>
+                    <a href="https://lucide.dev/" target="_blank" className={styles.itemsBack}>Lucide</a>
+                    <br />
+                    <a href="https://react-icons.github.io/react-icons/" target="_blank" className={styles.itemsBack}>React-Icons</a>
+                    <br />
+                    <a href="https://github.com/AaronCCWong/react-card-flip" target="_blank" className={styles.itemsBack}>Card Flip</a>
+                    <br />
+                    <a href="https://mui.com" target="_blank" className={styles.itemsBack}>Mui</a>
+                </>
+            )
         },
         {
-            front: "LINKS",
-            back: "Teste 3"
+            front: "CONTATO",
+            back: (
+                <>
+                    <a href="https://www.linkedin.com/in/michaelle-oliveira/" target="_blank">
+                        <FaLinkedinIn className={styles.iconsBack} size={54} />
+                    </a>
+                    <a href="https://github.com/michaelleoliveir" target="_blank">
+                        <FaGithub className={styles.iconsBack} size={54} />
+                    </a>
+                    <a href="mailto:michaelle.oliveira101103@gmail.com" target="_blank">
+                        <SiGmail className={styles.iconsBack} size={54} />
+                    </a>
+                </>
+            )
         }
     ]
 
@@ -64,7 +88,7 @@ const About = () => {
                                 </div>
 
 
-                                <div className={styles.box} id={styles.boxback}>
+                                <div className={styles.box} id={styles.boxBack}>
                                     <p className={styles.boxText}>{card.back}</p>
                                     <button className={styles.back} onClick={() => handleFlip(index)}>
                                         <ChevronLeft size={41} />
