@@ -30,13 +30,33 @@
     align-items: center;
     justify-content: center;
 
+    padding: 20px;
     border: 1.7px solid #03055e38;
     border-radius: 0.7rem;
     height: 14rem;
     width: 16rem;
 }
+
 .boxText {
+    width: 70%;
     margin: 0px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
 }
+
+button {
+    top: 3px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-top: 8px;
+}
+
+.front {
+    right: 10px;
+}
+
+.back {
+    left: 10px;
+}
+
