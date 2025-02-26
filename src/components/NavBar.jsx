@@ -5,10 +5,9 @@ import styles from "./NavBar.module.css"
 import { useAuthentication } from "../hooks/useAuthentication"
 import { useAuthValue } from "../context/AuthContext"
 
-import { RiHome2Line, RiInformation2Line } from "@remixicon/react"
-
 const NavBar = () => {
     const { user } = useAuthValue();
+    const { logout } = useAuthentication();
 
     return (
         <nav className={styles.navbar}>
@@ -33,7 +32,7 @@ const NavBar = () => {
                         </li>
                         <li>
                             <NavLink to="/register" className={({ isActive }) => (isActive ? styles.active : "")}>
-                                Register
+                                Registrar
                             </NavLink>
                         </li>
                     </>
@@ -56,9 +55,17 @@ const NavBar = () => {
                 )}
                 <li>
                     <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : "")}>
-                        About
+                        Sobre
                     </NavLink>
                 </li>
+
+                {user && (
+                    <li>
+                        <button onClick={logout} className={styles.buttonLogOut}>
+                            Sair
+                        </button>
+                    </li>
+                )}
             </ul>
         </nav>
     )

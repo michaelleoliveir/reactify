@@ -57,20 +57,22 @@
     text-align: center;
 }
 
-button {
+.front {
     top: 3px;
     position: absolute;
     background-color: transparent;
     border: none;
     margin-top: 8px;
-}
-
-.front {
     color: #CAF0F8;
     right: 10px;
 }
 
 .back {
+    top: 3px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-top: 8px;
     color: #03045E;
     left: 10px;
 }

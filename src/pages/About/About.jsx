@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from "./About.module.css";
-import { Link } from "react-router-dom";
 import { Grid2 } from "@mui/material";
 import ReactCardFlip from "react-card-flip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -99,10 +98,6 @@ const About = () => {
                     )
                 })}
             </Grid2>
-
-            <Link to="/posts/create" className="botao">
-                Criar post
-            </Link>
         </div>
     );
 };
