@@ -49,19 +49,19 @@ const Register = () => {
             <p className={styles.text}>Crie seu usuário e compartilhe suas histórias!</p>
             <form onSubmit={handleSubmit}>
                 <label style={{marginTop:"8px"}}>
-                    <span>Nome:</span>
+                    <span className={styles.title}>Nome:</span>
                     <input type="text" name="displayName" required placeholder="Nome do usuário" autoComplete="off" value={displayName} onChange={(e) => setDisplayName(e.target.value)} />
                 </label>
                 <label>
-                    <span>Email:</span>
+                    <span className={styles.title}>Email:</span>
                     <input type="email" name="email" required placeholder="Email do usuário" autoComplete="off" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
                 <label>
-                    <span>Senha:</span>
+                    <span className={styles.title}>Senha:</span>
                     <input type="password" name="password" required placeholder="Insira sua senha" autoComplete="off" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </label>
                 <label>
-                    <span>Confirmação de senha:</span>
+                    <span className={styles.title}>Confirmação de senha:</span>
                     <input type="password" name="confirmPassword" required placeholder="Confirme a sua senha" autoComplete="off" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                 </label>
 
