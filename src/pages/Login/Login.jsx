@@ -45,13 +45,14 @@ const Login = () => {
                     <span className={styles.title}>Senha:</span>
                     <input type="password" name="password" required placeholder="Insira sua senha" autoComplete="off" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </label>
+                <button className="btn">Entrar</button>
 
-                {!loading && <button className="btn">Entrar</button>}
+                {/* {!loading && <button className="btn">Entrar</button>}
                 {loading && <button className="btn" disabled>Aguarde...</button>}
 
                 {error && <p className="error">
                     <RiErrorWarningLine style={{ marginRight: "10px", color: "red" }} />
-                    {error}</p>}
+                    {error}</p>} */}
             </form>
         </div>
     )
