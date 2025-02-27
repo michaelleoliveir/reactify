@@ -47,7 +47,7 @@ const Register = () => {
         <div className={styles.register}>
             <h1 className={styles.heading}>Cadastre-se</h1>
             <p className={styles.text}>Crie seu usuário e compartilhe suas histórias!</p>
-            <form onSubmit={handleSubmit}>
+            <form className={styles.formRegister} onSubmit={handleSubmit}>
                 <label style={{marginTop:"8px"}}>
                     <span className={styles.title}>Nome:</span>
                     <input type="text" name="displayName" required placeholder="Nome do usuário" autoComplete="off" value={displayName} onChange={(e) => setDisplayName(e.target.value)} />

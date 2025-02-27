@@ -36,7 +36,7 @@ const Login = () => {
         <div className={styles.login}>
             <h1 className={styles.heading}>Entrar</h1>
             <p className={styles.text}>Faça o login para poder utilizar o sistema!</p>
-            <form onSubmit={handleSubmit}>
+            <form className={styles.formLogin} onSubmit={handleSubmit}>
                 <label>
                     <span className={styles.title}>Email:</span>
                     <input type="email" name="email" required placeholder="Email do usuário" autoComplete="off" value={email} onChange={(e) => setEmail(e.target.value)} />
