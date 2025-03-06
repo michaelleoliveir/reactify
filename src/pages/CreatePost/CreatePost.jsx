@@ -17,28 +17,44 @@ const CreatePost = () => {
 
     const {user} = useAuthValue();
 
-    const {insertDocument, response} = userInsertDocument();
+    const {insertDocument, response} = userInsertDocument("posts");
+
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormError("");
 
         // validate image URL
-
+        try {
+            new URL(image); 
+        } catch (error) {
+            setFormError("A imagem precisa ser uma URL válida");
+            return;
+        }
+        
         // creating tag array
+        const tagsArray = tags.split(",").map((tag) => tag.trim().toLowerCase());
 
         // check values
+        if(!title || !image || !tags || !body){
+            setFormError("Preencha os campos vazios")
+            return;
+        } 
+
+        if(formError) return;
 
         insertDocument({
             title,
             image, 
             body,
-            tags,
+            tagsArray,
             uid: user.uid,
             createdBy: user.displayName
         })
 
         // redirect to home page
+        navigate("/");
     }
 
     return (
@@ -85,6 +101,10 @@ const CreatePost = () => {
                 {response.error && <p className="error">
                 <RiErrorWarningLine style={{marginRight:"10px", color:"red"}} />
                 {response.error}</p>}
+
+                {formError && <p className="error">
+                <RiErrorWarningLine style={{marginRight:"10px", color:"red"}} />
+                {formError}</p>}
             </form>
         </div>
     )
