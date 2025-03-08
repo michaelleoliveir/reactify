@@ -8,7 +8,7 @@
     flex-direction: row;
 }
 
-input, input:focus {
+.home input, .home input:focus {
     border-radius: 0px;
     width: 350px;
     border: 0;

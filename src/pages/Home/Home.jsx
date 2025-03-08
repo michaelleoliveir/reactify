@@ -3,10 +3,12 @@ import styles from "./Home.module.css"
 import { useNavigate, Link } from "react-router-dom"
 import { useState } from "react"
 import { Frown, Search } from "lucide-react";
+import { useFetchDocuments } from "../../hooks/useFetchDocuments"
+import PostDetail from "../../components/PostDetail";
 
 export const Home = () => {
     const [query, setQuery] = useState("");
-    const [posts] = useState([]);
+    const {documents: posts, loading} = useFetchDocuments("posts");
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,7 +25,10 @@ export const Home = () => {
 
             {/* showing posts */}
             <div className={styles.section}>
-                
+                {loading && <p>Carregando posts...</p>}
+                {posts && posts.map((post) => (
+                    <PostDetail key={post.id} post={post} />
+                ))}
                 {posts && posts.length === 0 && (
                     <div className={styles.footer}>
                         <Frown size={50} className={styles.frown} />

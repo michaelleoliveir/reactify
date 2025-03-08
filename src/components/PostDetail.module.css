@@ -1,0 +1,54 @@
+.image {
+    object-fit: cover;
+    height: 30rem;
+    width: 42rem;
+    border-radius: 0.5rem;
+}
+
+.heading {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    color: #03045E;
+}
+
+.author {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.author::before {
+    content: "por ";
+}
+
+.tagDiv {
+    display: flex;
+    margin: 1.2rem 0rem 2.3rem 0rem;
+}
+
+.tag {
+    margin: 0px;
+    padding-right: 1.4rem;
+    font-size: 1.1rem;
+    color: #03055ec1;
+}
+
+.readMore {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: -0.8rem;
+    text-decoration: none;
+    border: 1.5px solid #03055e9c;
+    width: 5rem;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    color: #03045E;
+    transition: 0.2s;
+}
+
+.readMore:hover {
+    background-color: #03045E;
+    border: 1.5px solid #03055e9c;
+    color: rgb(222, 221, 221);
+}
