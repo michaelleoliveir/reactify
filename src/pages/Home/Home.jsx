@@ -1,6 +1,6 @@
 import styles from "./Home.module.css"
 
-import { useNavigate, Link } from "react-router-dom"
+import { useNavigate, Link, Navigate } from "react-router-dom"
 import { useState } from "react"
 import { Frown, Search } from "lucide-react";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments"
@@ -12,6 +12,10 @@ export const Home = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if(query) {
+            return Navigate(`/search?q=${query}`)
+        }
     }
 
     return (
