@@ -1,0 +1,68 @@
+.heading {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.8rem;
+    margin-top: 2.5rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    color: #03045E;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post img {
+    height: 400px;
+    width: 700px;
+    object-fit: cover;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details h1 {
+    color: #03045E;
+}
+
+.body {
+    text-align: start;
+    margin-top: 0.5rem;
+    color: rgb(152, 152, 152);
+    font-size: 1.2rem;
+}
+
+.details h3 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tags p {
+    color: #03045E;
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+}
+
+.tags span {
+    font-weight: bold;
+}
+
+.heading a {
+    margin-bottom: -10px;
+}
