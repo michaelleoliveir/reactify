@@ -1,0 +1,49 @@
+.search_module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #03045E;
+}
+
+.heading p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: #03045E;
+    font-weight: 300;
+}
+
+.heading span {
+    font-weight: bold;
+}
+
+.error {
+    color: #03045E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem;
+}
+
+.error p {
+    color: #03045E;
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.goHome {  
+    font-size: 1.3rem;  
+    padding: 20px;
+    background-color: #03045E;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #CAF0F8;
+}
