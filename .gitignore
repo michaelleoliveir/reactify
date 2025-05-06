@@ -1,5 +1,6 @@
 # important
 firebase/config.js
+.env
 
 # Logs
 logs

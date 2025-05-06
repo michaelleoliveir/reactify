@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDk9VCxivUSzWV6BBzVMnIqOJOP8cqrBzQ",
-    authDomain: "reactify-db.firebaseapp.com",
-    projectId: "reactify-db",
-    storageBucket: "reactify-db.firebasestorage.app",
-    messagingSenderId: "747767348150",
-    appId: "1:747767348150:web:acb4a1bc13c6cbe9fd5f17"
+    apiKey: import.meta.env.VITE_API_KEY,
+    authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_APP_ID
 };
 
 // Initialize Firebase
